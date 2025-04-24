@@ -1,0 +1,26 @@
+const express = require("express");
+const router = express.Router();
+const buyNbye = require("../controller/buyNbyeController");
+const crypto = require("crypto");
+
+router.post("/login", buyNbye.login);
+router.post("/register", buyNbye.register);
+router.post("/", buyNbye.token);
+router.delete("/", buyNbye.delToken);
+router.post("/profile", buyNbye.profile);
+router.post("/deleteAccount", buyNbye.delAcc);
+router.get("/users/:id/verify/:token", buyNbye.verify);
+router.post("/logout", buyNbye.logout);
+router.post("/allprod", buyNbye.displayProd);
+router.post("/sell", buyNbye.sell);
+router.post("/update", buyNbye.update);
+router.post("/prodData", buyNbye.prodData);
+router.post("/searchproduct", buyNbye.searchproduct);
+router.post("/addbid", buyNbye.addbid);
+router.post("/fixdeal", buyNbye.fixdeal);
+router.post("/removebid", buyNbye.removebid);
+router.post("/confirmdeal", buyNbye.confirmdeal);
+router.post("/cancelnotification", buyNbye.cancelnotification);
+router.post("/deletemyprod", buyNbye.deletemyprod);
+router.post("/deletemybid", buyNbye.deletemybid);
+module.exports = router;
