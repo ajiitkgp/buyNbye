@@ -16,19 +16,17 @@ The purpose of this project is to build connectivity within the campus where stu
 - Create .env file inside your client folder that will contain the base url of the application (basically "REACT_APP_BASEURL=http://localhost:5000" this link)
 - Now, create a new .env file inside your server folder, whose structure will be like:
 
-ATLAS_KEY=mongodb://localhost:27017/buynbye
-PORT=5000
-BASE_URL=http://localhost:3000/
-SALT=10
-JWTPRIVATEKEY=.......(Your need to create one)
-JWTREFRESHPRIVATEKEY=.......(Your need to create one)
-
-#### Email SMTP Configuration for Gmail
-EMAIL_HOST=smtp.gmail.com
-EMAIL_PORT=465
-EMAIL_SECURE=true
-USER=user@gmail.com     // Your gmail through which the verification email will be sent
-PASS=google app password     // Your google app password for gmail(create one if you don't have, use web to see how to create)
+    - ATLAS_KEY=mongodb://localhost:27017/buynbye
+    - PORT=5000
+    - BASE_URL=http://localhost:3000/
+    - SALT=10
+    - JWTPRIVATEKEY=.......(Your need to create one)
+    - JWTREFRESHPRIVATEKEY=.......(Your need to create one)
+    - EMAIL_HOST=smtp.gmail.com
+    - EMAIL_PORT=465
+    - EMAIL_SECURE=true
+    - USER=user@gmail.com     // Your gmail through which the verification email will be sent
+    - PASS=google app password     // Your google app password for gmail(create one if you don't have, use web to see how to create)
 
 - Now, start mongoDB locally in your machine.
 - Start the server with the "npm start" command.
@@ -37,6 +35,6 @@ PASS=google app password     // Your google app password for gmail(create one if
 
 
 ## Registration Process
-- Make sure that use your kgpian email id for signup process
+- Make sure to use your kgpian email id for signup process
 - Make sure your password is of atleast 8 length
 
