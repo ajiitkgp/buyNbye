@@ -37,6 +37,6 @@ PASS=google app password     // Your google app password for gmail(create one if
 
 
 ## Registration Process
-- Make sure that your email id end's with @kgpian.iitkgp.ac.in
+- Make sure that use your kgpian email id for signup process
 - Make sure your password is of atleast 8 length
 
