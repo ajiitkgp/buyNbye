@@ -13,7 +13,7 @@ const bidSchema = new Schema({
     buyerId: { type: Schema.Types.ObjectId },
     bidPrice: { type: Number },
     bidTime: { type: Date },
-    regno: { type: Number },
+    regno: { type: String },
     cancel: { type: Boolean },
   }),
 });
